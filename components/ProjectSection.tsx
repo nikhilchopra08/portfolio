@@ -30,13 +30,6 @@ const projectData: Pin[] = [
     tag: "Web",
   },
   {
-    title: "https://github.com/nikhilchopra08/ecommerce-store",
-    href: "https://github.com/nikhilchopra08/ecommerce-store",
-    heading: "Ecommerce Store",
-    description: "An example project description.",
-    tag: "Web",
-  },
-  {
     title: "https://github.com/nikhilchopra08/OneForAll-Frontend",
     href: "https://github.com/nikhilchopra08/OneForAll-Frontend",
     heading: "One for All",
@@ -89,11 +82,11 @@ const ProjectSection = () => {
         <ProjectTag onClick={handleTagChange} name="ML" isSelected={tag === "ML"} />
         {/* Add more ProjectTags if needed */}
       </div>
-      <ul ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-2 max-w-7xl mx-auto lg:grid-cols-3 gap-12 md:mb-16 mb-12 md:gap-12">
         {filteredProjects.map((pin, index) => (
           <PinContainer key={index} title={pin.title} href={pin.href}>
             <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-center text-slate-100">
                 {pin.heading}
               </h3>
               <div className="text-base !m-0 !p-0 font-normal">

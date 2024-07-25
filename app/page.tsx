@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-black">
       <NavBar/>
-      <div className="relative flex w-full items-center justify-center overflow-hidden bg-background p-20 md:shadow-xl">
+      <div className="relative flex w-full items-center justify-center overflow-hidden bg-transparent md:shadow-xl">
       <AnimatedGridPattern
         numSquares={50}
         maxOpacity={0.5}
