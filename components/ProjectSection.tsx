@@ -16,8 +16,8 @@ type Pin = {
 
 const projectData: Pin[] = [
   {
-    title: "https://admin-ecommerce-store.vercel.app/78777410-c8cc-4ed1-8cff-fec370274b36",
-    href: "https://admin-ecommerce-store.vercel.app/78777410-c8cc-4ed1-8cff-fec370274b36",
+    title: "https://github.com/nikhilchopra08/portfolio",
+    href: "https://github.com/nikhilchopra08/portfolio",
     heading: "Portfolio",
     description: "Customizable Tailwind CSS and Framer Motion Components.",
     tag: "Web",
@@ -80,12 +80,13 @@ const ProjectSection = () => {
 
   return (
     <section>
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8">
+      <h2 className="pointer-events-none whitespace-pre-wrap font-semibold leading-none text-transparent dark:from-white dark:to-black bg-gradient-to-b from-slate-500 to-gray-300 bg-clip-text text-6xl text-center mt-4 mb-2 md:mb-8">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
         <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
+        <ProjectTag onClick={handleTagChange} name="ML" isSelected={tag === "ML"} />
         {/* Add more ProjectTags if needed */}
       </div>
       <ul ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">

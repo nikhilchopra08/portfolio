@@ -7,6 +7,7 @@ import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import ProjectSection from "@/components/ProjectSection";
 import { AnimatedBeamDemo } from "@/components/Skills";
 import Footer from "@/components/footer";
+import Project1 from "@/components/Tools";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <HeroSection/>
       <AboutSection/>
       <AnimatedBeamDemo/>
+        <Project1/>
       <ProjectSection/>
       </div>
       </div>
