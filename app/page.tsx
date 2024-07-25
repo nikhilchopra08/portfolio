@@ -14,8 +14,8 @@ export default function Home() {
       <NavBar/>
       <div className="relative flex w-full items-center justify-center overflow-hidden bg-background p-20 md:shadow-xl">
       <AnimatedGridPattern
-        numSquares={30}
-        maxOpacity={0.1}
+        numSquares={50}
+        maxOpacity={0.5}
         duration={3}
         repeatDelay={1}
         className={cn(

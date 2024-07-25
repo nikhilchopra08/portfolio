@@ -7,7 +7,7 @@ type Props = {
 
 const NavLinks = ({ href, title } : Props) => {
     return (
-        <Link href={href} className="block py-2 pl-3 pr-4 text-[#ADE7BE]">{title}
+        <Link href={href} className="block py-2 pl-3 pr-4 text-white">{title}
         </Link>
     );
 };

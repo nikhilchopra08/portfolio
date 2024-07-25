@@ -3,6 +3,8 @@ import React, { useState, useRef } from "react";
 import ProjectTag from "./ProjectTags";
 import { motion, useInView } from "framer-motion";
 import { PinContainer } from "./ui/3d-pin";
+import Image from "next/image";
+import img from "../public/Images/about.png"
 
 type Pin = {
   title: string;
@@ -14,48 +16,48 @@ type Pin = {
 
 const projectData: Pin[] = [
   {
-    title: "/ui.aceternity.com",
-    href: "https://twitter.com/mannupaaji",
-    heading: "Aceternity UI",
+    title: "https://admin-ecommerce-store.vercel.app/78777410-c8cc-4ed1-8cff-fec370274b36",
+    href: "https://admin-ecommerce-store.vercel.app/78777410-c8cc-4ed1-8cff-fec370274b36",
+    heading: "Portfolio",
     description: "Customizable Tailwind CSS and Framer Motion Components.",
     tag: "Web",
   },
   {
-    title: "/example.com",
-    href: "https://example.com",
-    heading: "Example Project",
-    description: "An example project description.",
-    tag: "All",
-  },
-  {
-    title: "/ui.aceternity.com",
-    href: "https://twitter.com/mannupaaji",
-    heading: "Aceternity UI",
+    title: "https://admin-ecommerce-store.vercel.app/78777410-c8cc-4ed1-8cff-fec370274b36",
+    href: "https://admin-ecommerce-store.vercel.app/78777410-c8cc-4ed1-8cff-fec370274b36",
+    heading: "Ecommerce Admin",
     description: "Customizable Tailwind CSS and Framer Motion Components.",
     tag: "Web",
   },
   {
-    title: "/example.com",
-    href: "https://example.com",
-    heading: "Example Project",
+    title: "https://github.com/nikhilchopra08/ecommerce-store",
+    href: "https://github.com/nikhilchopra08/ecommerce-store",
+    heading: "Ecommerce Store",
     description: "An example project description.",
-    tag: "All",
+    tag: "Web",
   },
+  {
+    title: "https://github.com/nikhilchopra08/OneForAll-Frontend",
+    href: "https://github.com/nikhilchopra08/OneForAll-Frontend",
+    heading: "One for All",
+    description: "Customizable Tailwind CSS and Framer Motion Components.",
+    tag: "Web",
+  },
+  {
+    title: "https://github.com/nikhilchopra08/finance_app_tutorials",
+    href: "https://github.com/nikhilchopra08/finance_app_tutorials",
+    heading: "Finance Saas App",
+    description: "An example project description.",
+    tag: "Web",
+  },
+  {
+    title: "https://github.com/nikhilchopra08/image_classification_using_machine_learning",
+    href: "https://github.com/nikhilchopra08/image_classification_using_machine_learning",
+    heading: "Image Classifcation Model",
+    description: "An example project description.",
+    tag: "ML",
+  }
 
-  {
-    title: "/ui.aceternity.com",
-    href: "https://twitter.com/mannupaaji",
-    heading: "Aceternity UI",
-    description: "Customizable Tailwind CSS and Framer Motion Components.",
-    tag: "Web",
-  },
-  {
-    title: "/example.com",
-    href: "https://example.com",
-    heading: "Example Project",
-    description: "An example project description.",
-    tag: "All",
-  },  // Add more pins as needed
 ];
 
 const ProjectSection = () => {
@@ -86,7 +88,7 @@ const ProjectSection = () => {
         <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
         {/* Add more ProjectTags if needed */}
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((pin, index) => (
           <PinContainer key={index} title={pin.title} href={pin.href}>
             <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
@@ -98,7 +100,8 @@ const ProjectSection = () => {
                   {pin.description}
                 </span>
               </div>
-              <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+              {/* <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" /> */}
+              <Image src={img} alt="Image" className="flex flex-1 w-full rounded-lg mt-4"/>
             </div>
           </PinContainer>
         ))}
