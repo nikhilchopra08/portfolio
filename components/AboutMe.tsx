@@ -26,7 +26,7 @@ const slugs = [
 
 export function AboutSection() {
     return (
-        <section className='text-white'>
+        <section className='text-white' id="about">
             <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py:16'>
                 <div className='grid place-content-center'>
                     <div className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-black px-20 pb-20 pt-8 ">

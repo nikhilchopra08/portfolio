@@ -21,8 +21,8 @@ type Pin = {
 
 const projectData: Pin[] = [
   {
-    title: "https://github.com/nikhilchopra08/portfolio",
-    href: "https://github.com/nikhilchopra08/portfolio",
+    title: "https://portfolio-steel-eta-29.vercel.app",
+    href: "https://portfolio-steel-eta-29.vercel.app",
     heading: "Portfolio",
     description: "Customizable Tailwind CSS and Framer Motion Components.",
     tag: "Web",
@@ -57,7 +57,7 @@ const projectData: Pin[] = [
     href: "https://github.com/nikhilchopra08/image_classification_using_machine_learning",
     heading: "Image Classifcation Model",
     description: "An example project description.",
-    tag: "Web",
+    tag: "ML",
     image: model,
   }
 
@@ -82,7 +82,7 @@ const ProjectSection = () => {
   };
 
   return (
-    <section>
+    <section id="project">
       <h2 className="pointer-events-none whitespace-pre-wrap font-semibold leading-none text-slate-50 text-6xl text-center mt-4 mb-2 md:mb-8">
         My Projects
       </h2>

@@ -7,17 +7,13 @@ import NavLinks from './NavLinks';
 
 const navLinks = [
     {
-        title: "About",
-        path: "#about",
+        title: "Contact Me",
+        path: "https://www.linkedin.com/in/nikhil-chopra-238334270/",
     },
     {
-        title : "Projects",
-        path : "#projects"
+        title: "Resume",
+        path: "https://drive.google.com/file/d/1SRoSWSjwMam3fYQh-t8edAvsPe29Ta6N/view?usp=share_link",
     },
-    {
-        title : "ContactUs",
-        path : "#contact"
-    }
 ]
 
 const NavBar = () => {

@@ -6,76 +6,40 @@ import ToolCard from './ToolCard'
 const projectData = [
   {
     id: 1,
-    title: "n",
-    description : "nikhil",
-    image : "/Images/about.png",
-    tag : ["All" , "Web"],
-    gitUrl : "/",
-    previewUrl : "/"
+    title: "Docker",
+    description : "An open-source platform that automates the deployment and management of applications using containerization. ",
+    image : "/Images/docker.png",
   },
   {
     id: 2,
-    title: "n",
-    description : "nikhil",
-    image : "/Images/about.png",
-    tag : ["All" , "Web"],
-    gitUrl : "/",
-    previewUrl : "/"
+    title: "AWS (Amazon Web Services)",
+    description : "A comprehensive cloud computing platform by Amazon offering a wide range of services, ",
+    image : "/Images/aws.jpeg",
   },
   {
     id: 3,
-    title: "n",
-    description : "nikhil",
-    image : "/Images/about.png",
-    tag : ["All" , "Web"],
-    gitUrl : "/",
-    previewUrl : "/"
+    title: "Firebase",
+    description : "A platform developed by Google for building and managing web and mobile applications. ",
+    image : "/Images/firebase.png",
   },
   {
     id: 4,
-    title: "n",
-    description : "nikhil",
-    image : "/Images/about.png",
-    tag : ["All" , "Web"],
-    gitUrl : "/",
-    previewUrl : "/"
+    title: "Postman",
+    description : "A collaboration platform for API development.",
+    image : "/Images/postman.jpg",
   },
   {
     id: 5,
-    title: "n",
-    description : "nikhil",
-    image : "/Images/about.png",
-    tag : ["All" , "Web"],
-    gitUrl : "/",
-    previewUrl : "/"
+    title: "Redis",
+    description : "An open-source, in-memory data structure store used as a database, cache, and message broker. ",
+    image : "/Images/redis.webp",
   },
   {
     id: 6,
-    title: "jkfdng n",
-    description : "nikhil",
-    image : "/Images/about.png",
-    tag : ["All" , "Mobile"],
-    gitUrl : "/",
-    previewUrl : "/"
+    title: "Tailwind CSS",
+    description : "Utility-first CSS framework for rapid UI development",
+    image : "/Images/tailwind.png",
   },
-  {
-    id: 7,
-    title: "n",
-    description : "nikhil",
-    image : "/Images/about.png",
-    tag : ["All" , "Web"],
-    gitUrl : "/",
-    previewUrl : "/"
-  },
-  {
-    id: 8,
-    title: "jkfdng n",
-    description : "nikhil",
-    image : "/Images/about.png",
-    tag : ["All" , "Mobile"],
-    gitUrl : "/",
-    previewUrl : "/"
-  }
 ]
 
 const Project1 = () => {
@@ -90,13 +54,13 @@ const Project1 = () => {
   }
 
   return (
-    <section>
+    <section id='tool'>
     <h2 className='pointer-events-none whitespace-pre-wrap font-semibold leading-none text-slate-50 text-6xl text-center mt-4 mb-8'>Tools</h2>
     <ul ref={ref} className='grid max-w-6xl mx-auto lg:grid-cols-4 md:grid-cols-2 gap-8 md:gap-8 md:mb-16 mb-8'>
       {projectData.map((project , index) =>
       <motion.li key={index} variants={cardVarients} initial="initial" animate={isInView ? "animate" : "initial"} transition={{ duration: 0.3,  delay: index * 0.4}}>
        <ToolCard
-        key={project.id} imgUrl = {project.image} title={project.title} description={project.description} gitUrl={project.gitUrl} previewUrl={project.previewUrl}/>
+        key={project.id} imgUrl = {project.image} title={project.title} description={project.description}/>
           </motion.li>
       )}
        </ul>
