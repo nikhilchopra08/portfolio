@@ -31,12 +31,12 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
   fromRef,
   toRef,
   curvature = 0,
-  reverse = false, // Include the reverse prop
+  reverse = true, // Include the reverse prop
   duration = 5,
   delay = 0,
   pathColor = "white",
   pathWidth = 2,
-  pathOpacity = 0.2,
+  pathOpacity = 0.4,
   gradientStartColor = "#ffaa40",
   gradientStopColor = "#9c40ff",
   startXOffset = 0,

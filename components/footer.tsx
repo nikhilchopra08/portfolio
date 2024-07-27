@@ -9,7 +9,8 @@ const Footer = () => {
           {/* About Me Section */}
           <div>
             <h2 className="text-2xl font-bold text-slate-100 mb-4">About Me</h2>
-            <p className="text-slate-200">I'm a passionate developer focused on creating beautiful and functional web applications.</p>
+            <p className="text-slate-200">I'm a full-stack developer and programmer 
+            Creating innovative solutions and pushing the boundaries of technology.</p>
           </div>
 
 
