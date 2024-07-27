@@ -3,8 +3,12 @@ import React, { useState, useRef } from "react";
 import ProjectTag from "./ProjectTags";
 import { motion, useInView } from "framer-motion";
 import { PinContainer } from "./ui/3d-pin";
-import Image from "next/image";
-import img from "../public/Images/about.png"
+import Image, { StaticImageData } from "next/image";
+import img from "../public/Images/about.png";
+import FinanceSAAS from "../public/Images/FinanceSAAS.png";
+import oneforall from "../public/Images/oneforall.png";
+import admin from "../public/Images/Admin.png";
+import model from "../public/Images/model.png";
 
 type Pin = {
   title: string;
@@ -12,6 +16,7 @@ type Pin = {
   heading: string;
   description: string;
   tag: string; // Add tag property
+  image: StaticImageData;
 };
 
 const projectData: Pin[] = [
@@ -21,6 +26,7 @@ const projectData: Pin[] = [
     heading: "Portfolio",
     description: "Customizable Tailwind CSS and Framer Motion Components.",
     tag: "Web",
+    image: img,
   },
   {
     title: "https://admin-ecommerce-store.vercel.app/78777410-c8cc-4ed1-8cff-fec370274b36",
@@ -28,6 +34,7 @@ const projectData: Pin[] = [
     heading: "Ecommerce Admin",
     description: "Customizable Tailwind CSS and Framer Motion Components.",
     tag: "Web",
+    image: admin,
   },
   {
     title: "https://github.com/nikhilchopra08/OneForAll-Frontend",
@@ -35,6 +42,7 @@ const projectData: Pin[] = [
     heading: "One for All",
     description: "Customizable Tailwind CSS and Framer Motion Components.",
     tag: "Web",
+    image: oneforall,
   },
   {
     title: "https://github.com/nikhilchopra08/finance_app_tutorials",
@@ -42,13 +50,15 @@ const projectData: Pin[] = [
     heading: "Finance Saas App",
     description: "An example project description.",
     tag: "Web",
+    image: FinanceSAAS,
   },
   {
     title: "https://github.com/nikhilchopra08/image_classification_using_machine_learning",
     href: "https://github.com/nikhilchopra08/image_classification_using_machine_learning",
     heading: "Image Classifcation Model",
     description: "An example project description.",
-    tag: "ML",
+    tag: "Web",
+    image: model,
   }
 
 ];
@@ -73,7 +83,7 @@ const ProjectSection = () => {
 
   return (
     <section>
-      <h2 className="pointer-events-none whitespace-pre-wrap font-semibold leading-none text-transparent dark:from-white dark:to-black bg-gradient-to-b from-slate-500 to-gray-300 bg-clip-text text-6xl text-center mt-4 mb-2 md:mb-8">
+      <h2 className="pointer-events-none whitespace-pre-wrap font-semibold leading-none text-slate-50 text-6xl text-center mt-4 mb-2 md:mb-8">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
@@ -95,7 +105,7 @@ const ProjectSection = () => {
                 </span>
               </div>
               {/* <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" /> */}
-              <Image src={img} alt="Image" className="flex flex-1 w-full rounded-lg mt-4"/>
+              <Image src={pin.image} alt="Image" className="flex flex-1 w-full rounded-lg mt-4"/>
             </div>
           </PinContainer>
         ))}

@@ -36,7 +36,7 @@ export function AnimatedBeamDemo() {
 
   return (
     <div>
-        <h2 className="pointer-events-none whitespace-pre-wrap font-semibold leading-none text-transparent dark:from-white dark:to-black bg-gradient-to-b from-slate-500 to-gray-300 bg-clip-text text-6xl text-center mt-4">Skills</h2>
+        <h2 className="pointer-events-none whitespace-pre-wrap font-semibold leading-none text-slate-50 text-6xl text-center mt-4">Skills</h2>
     <div
       className="-my-20 md:-my-8 relative flex h-[500px] w-full items-center justify-center overflow-hidden rounded-lg p-10 md:shadow-xl"
       ref={containerRef}

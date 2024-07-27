@@ -2,34 +2,24 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion'
+import { TextGenerateEffect } from './ui/text-generate-effect';
+
 
 const HeroSection = () => {
+
+  const words = `I'm a full-stack developer and programmer. `;
+
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div initial={{ opacity: 0, scale: 0.5}} animate={{ opacity: 1, scale: 1}} transition={{ duration: 0.5}} className='col-span-7 place-content-center text-center sm:text-left'>
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-purple-900">
-              Hello, I&apos;m{" "}
+          <h1 className="text-4xl lg:mt-0 md:text-5xl lg:text-6xl font-bold antialiased text-center lg:text-left">
+            <span className="text-white ">
+              Hello, I&apos;m{" "} Nikhil Chopra!
             </span>
-            <br></br>
-            <TypeAnimation
-              sequence={[
-                "Nikhil Chopra!",
-                1000,
-                "Web Developer",
-                1000,
-                "AI/ML Enthusiast",
-                1000,
-                "Web3 Enthusiast",
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+            <TextGenerateEffect words={words} />
           </h1>
-          <p className='text-white text-base sm:text-lg lg:text-xl mb-4'>Creating innovative solutions and pushing the boundaries of technology.</p>
+          <p className='text-white text-base sm:text-lg lg:text-xl mt-4 mb-4'>Creating innovative solutions and pushing the boundaries of technology.</p>
           <div>
             <button className='px-4 py-3 w-fit rounded-full mr-3 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white'>Hire Me</button>
             <button className='px-1 py-1 w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-600 to-pink-300 hover:bg-slate-800 text-white mt-3'>
