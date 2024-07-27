@@ -4,7 +4,8 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion'
 import { TextGenerateEffect } from './ui/text-generate-effect';
 import { TypewriterEffectSmooth } from './ui/typewriter-effect';
-
+import Nikhil from "../public/Images/Nikhil_Chopra.png"
+import Image from 'next/image';
 
 const HeroSection = () => {
 
@@ -55,9 +56,17 @@ const HeroSection = () => {
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, scale: 0.5}} animate={{ opacity: 1, scale: 1}} className='col-span-5 place-self-center mt-4 lg:mt-0'>
-          <div className='rounded-full bg-white w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
-            <div className='h-300 text-black w-400 absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'>My Image Here</div>
-          </div>
+        <div className='w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative rounded-full overflow-hidden bg-white'>
+    <div className='absolute inset-0'>
+      <Image
+        src={Nikhil}
+        alt='GitHub Icon'
+        layout='fill'
+        objectFit='cover'
+        className='rounded-full'
+      />
+    </div>
+  </div>
         </motion.div>
       </div>
     </section>
