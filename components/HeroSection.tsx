@@ -3,20 +3,39 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion'
 import { TextGenerateEffect } from './ui/text-generate-effect';
+import { TypewriterEffectSmooth } from './ui/typewriter-effect';
 
 
 const HeroSection = () => {
 
   const words = `I'm a full-stack developer and programmer. `;
 
+  const Intro = [
+    {
+      text: "Hello,",
+    },
+    {
+      text: "I",
+    },
+    {
+      text: "'m",
+    },
+    {
+      text: "Nikhil",
+      className: "text-blue-400",
+    },
+    {
+      text: "Chopra.",
+      className: "text-blue-400",
+    },
+  ];
+
   return (
     <section className="lg:py-16" id='home'>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div initial={{ opacity: 0, scale: 0.5}} animate={{ opacity: 1, scale: 1}} transition={{ duration: 0.5}} className='col-span-7 place-content-center text-center sm:text-left'>
           <h1 className="text-4xl lg:mt-0 md:text-5xl lg:text-6xl font-bold antialiased text-center lg:text-left">
-            <span className="text-white ">
-              Hello, I&apos;m{" "} Nikhil Chopra!
-            </span>
+              <TypewriterEffectSmooth words={Intro} />
             <TextGenerateEffect words={words} />
           </h1>
           <p className='text-white text-base sm:text-lg lg:text-xl mt-4 mb-4'>Creating innovative solutions and pushing the boundaries of technology.</p>
