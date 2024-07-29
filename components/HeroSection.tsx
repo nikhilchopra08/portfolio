@@ -1,9 +1,6 @@
 "use client"
 import React from 'react'
-import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion'
-import { TextGenerateEffect } from './ui/text-generate-effect';
-import { TypewriterEffectSmooth } from './ui/typewriter-effect';
 import Nikhil from "../public/Images/Nikhil_Chopra.png"
 import Image from 'next/image';
 
