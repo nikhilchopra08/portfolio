@@ -10,7 +10,7 @@ type Props = {
 
 const ToolCard = ({ imgUrl, title , description}: Props) => {
   return (
-    <div className="relative group w-full h-52 md:h-72 rounded-t-xl overflow-hidden mx-auto">
+    <div className="relative group w-[90vw] md:w-full h-52 md:h-72 min-h-72 rounded-t-xl overflow-hidden mx-auto">
       <div 
         className="w-full h-full bg-cover bg-center" 
         style={{ backgroundImage: `url(${imgUrl})` }}

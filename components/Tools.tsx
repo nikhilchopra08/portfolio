@@ -26,7 +26,7 @@ const projectData = [
     id: 4,
     title: "Postman",
     description : "A collaboration platform for API development.",
-    image : "/Images/postman.jpg",
+    image : "/Images/postman.png",
   },
   {
     id: 5,
