@@ -58,7 +58,7 @@ export function AnimatedBeamDemo() {
             <p>Skills</p>
           </Circle>
           <Circle ref={div6Ref} className="h-16 w-16">
-            <Icons.Python />
+            <Icons.MongoDb />
           </Circle>
         </div>
         <div className="flex flex-row items-center justify-between">
