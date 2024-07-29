@@ -13,11 +13,23 @@ const HeroSection = () => {
 
   const Intro = [
     {
-      text: "Nikhil",
-      className: "text-blue-400",
+      text: "I'm",
+      className: "text-slate-100",
     },
     {
-      text: "Chopra.",
+      text: "a",
+      className: "text-slate-100",
+    },
+    {
+      text: "full-stack developer",
+      className: "text-",
+    },
+    {
+      text: "and",
+      className: "text-slate-100",
+    },
+    {
+      text: "programmer",
       className: "text-blue-400",
     },
   ];
@@ -26,10 +38,16 @@ const HeroSection = () => {
     <section className="lg:py-16" id='home'>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div initial={{ opacity: 0, scale: 0.5}} animate={{ opacity: 1, scale: 1}} transition={{ duration: 0.5}} className='col-span-7 place-content-center text-center sm:text-left'>
-          <h1 className="text-4xl lg:mt-0 md:text-5xl lg:text-6xl font-bold antialiased text-center lg:text-left">
-              <span className='text-white'>Hello I am </span>
-              <TypewriterEffectSmooth words={Intro} />
-            <TextGenerateEffect words={words} />
+          <h1 className="text-4xl lg:mt-0 md:text-5xl lg:text-6xl font-bold antialiased text-center text-white lg:text-left">
+            Hello I am   <span className='text-blue-400'>Nikhil Chopra</span>
+            <div className="flex space-x-1 my-6">
+              <p className='text-sm mx-auto text-slate-100 sm:text-base md:text-lg lg:text:lg xl:text-5xl font-bold'>I am a {" "}
+                <span className='text-purple-500'>
+                  full-stack developer
+                </span> and {" "}
+                <span className='text-rose-400'> programmer</span>. </p>
+              </div>
+
           </h1>
           <p className='text-white text-base sm:text-lg lg:text-xl mt-4 mb-4'>Creating innovative solutions and pushing the boundaries of technology.</p>
           <div>
